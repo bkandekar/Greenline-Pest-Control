@@ -67,6 +67,9 @@
             overflow: hidden;
             transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
         }
+        .faq-item.open .faq-body {
+            max-height: 500px;
+        }
         .faq-content {
             padding: 0 24px 20px;
             color: var(--text-dark);
@@ -593,38 +596,51 @@
     <!-- JS Scripts -->
     <script src="js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqItems = document.querySelectorAll('.faq-item');
+        (function() {
+            function initFAQ() {
+                const faqItems = document.querySelectorAll('.faq-item');
+                if (faqItems.length === 0) return;
 
-            faqItems.forEach(item => {
-                const header = item.querySelector('.faq-header');
-                const body = item.querySelector('.faq-body');
+                faqItems.forEach(item => {
+                    const header = item.querySelector('.faq-header');
+                    const body = item.querySelector('.faq-body');
+                    if (!header || !body) return;
 
-                header.addEventListener('click', () => {
-                    const isOpen = item.classList.contains('open');
+                    header.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const isOpen = item.classList.contains('open');
 
-                    // Close all other faq items
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            otherItem.classList.remove('open');
-                            otherItem.querySelector('.faq-header').setAttribute('aria-expanded', 'false');
-                            otherItem.querySelector('.faq-body').style.maxHeight = '0';
+                        // Close all other faq items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('open');
+                                const otherHeader = otherItem.querySelector('.faq-header');
+                                const otherBody = otherItem.querySelector('.faq-body');
+                                if (otherHeader) otherHeader.setAttribute('aria-expanded', 'false');
+                                if (otherBody) otherBody.style.maxHeight = '0';
+                            }
+                        });
+
+                        // Toggle current faq item
+                        if (isOpen) {
+                            item.classList.remove('open');
+                            header.setAttribute('aria-expanded', 'false');
+                            body.style.maxHeight = '0';
+                        } else {
+                            item.classList.add('open');
+                            header.setAttribute('aria-expanded', 'true');
+                            body.style.maxHeight = body.scrollHeight + 'px';
                         }
                     });
-
-                    // Toggle current faq item
-                    if (isOpen) {
-                        item.classList.remove('open');
-                        header.setAttribute('aria-expanded', 'false');
-                        body.style.maxHeight = '0';
-                    } else {
-                        item.classList.add('open');
-                        header.setAttribute('aria-expanded', 'true');
-                        body.style.maxHeight = body.scrollHeight + 'px';
-                    }
                 });
-            });
-        });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initFAQ);
+            } else {
+                initFAQ();
+            }
+        })();
     </script>
 </body>
 </html>
