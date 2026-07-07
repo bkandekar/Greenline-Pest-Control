@@ -33,7 +33,7 @@
             background: #fff;
             transition: border-color 0.3s, box-shadow 0.3s;
         }
-        .faq-item.active {
+        .faq-item.open {
             border-color: var(--primary-color);
             box-shadow: var(--shadow-sm);
         }
@@ -58,7 +58,7 @@
             color: var(--primary-color);
             flex-shrink: 0;
         }
-        .faq-item.active .faq-header i {
+        .faq-item.open .faq-header i {
             transform: rotate(180deg);
             color: var(--accent-color);
         }
@@ -601,24 +601,24 @@
                 const body = item.querySelector('.faq-body');
 
                 header.addEventListener('click', () => {
-                    const isActive = item.classList.contains('active');
+                    const isOpen = item.classList.contains('open');
 
                     // Close all other faq items
                     faqItems.forEach(otherItem => {
                         if (otherItem !== item) {
-                            otherItem.classList.remove('active');
+                            otherItem.classList.remove('open');
                             otherItem.querySelector('.faq-header').setAttribute('aria-expanded', 'false');
                             otherItem.querySelector('.faq-body').style.maxHeight = '0';
                         }
                     });
 
                     // Toggle current faq item
-                    if (isActive) {
-                        item.classList.remove('active');
+                    if (isOpen) {
+                        item.classList.remove('open');
                         header.setAttribute('aria-expanded', 'false');
                         body.style.maxHeight = '0';
                     } else {
-                        item.classList.add('active');
+                        item.classList.add('open');
                         header.setAttribute('aria-expanded', 'true');
                         body.style.maxHeight = body.scrollHeight + 'px';
                     }
