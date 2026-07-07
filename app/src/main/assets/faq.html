@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQ) | Greenline Pest Control</title>
+    <meta name="description" content="Got questions about safety, methods, or booking? Read our 15 comprehensive FAQs covering child-safe treatments, warranty terms, and WhatsApp bookings.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenlinepest.com/faq.html">
+    <meta property="og:title" content="Pest Control FAQs | Greenline Pest Control">
+    <meta property="og:description" content="Learn about our safe odor-free gels, treatment duration, same-day emergencies, and how our WhatsApp booking modal works.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* FAQ specific styles */
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            overflow: hidden;
+            background: #fff;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .faq-item.open {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-sm);
+        }
+        .faq-header {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 20px 24px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            gap: 15px;
+            outline: none;
+        }
+        .faq-header i {
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-header i {
+            transform: rotate(180deg);
+            color: var(--accent-color);
+        }
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .faq-item.open .faq-body {
+            max-height: 500px;
+        }
+        .faq-content {
+            padding: 0 24px 20px;
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-size: 0.95rem;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. PRE-LOADER -->
+    <div id="preloader" role="status" aria-label="Loading page content">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. DISMISSIBLE TOP BANNER -->
+    <div class="top-banner" id="topBanner">
+        <p><i class="fa-solid fa-sparkles"></i> <strong>Special Offer:</strong> Free Property Inspection This Week! Book Now.</p>
+        <button class="close-banner" id="closeBanner" aria-label="Dismiss banner">&times;</button>
+    </div>
+
+    <!-- 3. CONTACT INFO HEADER BAR -->
+    <div class="contact-header-bar">
+        <div class="container">
+            <div class="contact-header-links">
+                <a href="tel:+917559352915"><i class="fa-solid fa-phone"></i> +91 7559352915</a>
+                <a href="tel:+919527586194"><i class="fa-solid fa-phone-volume"></i> +91 9527586194</a>
+                <a href="mailto:info@greenlinepest.com"><i class="fa-solid fa-envelope"></i> info@greenlinepest.com</a>
+            </div>
+            <div class="contact-header-links">
+                <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. HEADER & STICKY NAVBAR -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Greenline</h1>
+                    <span>Pest Control</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                    <i class="fa-solid fa-calendar-check"></i> Book Free Quote
+                </button>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                <i class="fa-solid fa-calendar-check"></i> Book Quote
+            </button>
+            <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-accent" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- FAQ Hero Section -->
+        <section class="section-padding text-center" style="background-color: var(--bg-light); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <span class="section-subtitle">Got Questions?</span>
+                <h1 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px;">Frequently Asked Questions</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem;">We believe in complete transparency. Below are detailed answers to the most common queries regarding our safety standards, procedures, and AMC warranty plans.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Container -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="faq-accordion">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Is the treatment safe for children and pets?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Yes, absolutely. We prioritize your family's health by using biological gels, low-toxicity water-based micro-emulsions, and synthetic pyrethroids approved by central regulatory bodies. These odorless treatments are selectively applied to target pests without causing residual air pollution, making them safe for kids, seniors, and domestic pets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>How long does a treatment take?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                A standard general treatment for a typical 2BHK or 3BHK home takes about 45 to 60 minutes. Specialized treatments like extensive termite drilling, slab injections, or deep bed bug steam cleaning may require 2 to 4 hours depending on the property's size and the infestation density. Our technicians work diligently to minimize any disruption to your schedule.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>When will I start seeing results?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                For crawl-space treatments like cockroach gel baits and ant spraying, you will notice a significant drop in pest activity within 24 to 48 hours. For deep-nested pests like bed bugs or nesting termites, complete eradication can take up to 7 to 10 days as biological regulators systematically disrupt their breeding cycles. We provide detailed timelines based on our initial audit.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>What is the difference between one-time treatments and AMC packages?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                A one-time treatment targets a current, immediate infestation and includes a standard 15-day effectiveness shield. An Annual Maintenance Contract (AMC) is a proactive quarterly contract that prevents pests from nesting in the first place by renewing barrier shields throughout the year. AMC packages are significantly more cost-effective and provide priority support with free emergency call-outs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Do I need to vacate the property during treatment?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                No, for most of our residential treatments (like cockroach gel baiting or spot spraying) you do not need to leave the house. However, for deep space fogging, misting, or bed bug steam cleaning, we recommend vacating the rooms during the active operation and for 1-2 hours afterward. This is a standard safety precaution to allow the low-toxicity spray to dry completely.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>What chemicals and methods do you use?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                We utilize high-efficiency, eco-safe solutions including biological gel baits, odorless micro-emulsions, and low-drift spray treatments. We avoid aggressive, toxic organophosphates, choosing instead targeted insect growth regulators (IGRs) that disrupt pest reproduction without leaving chemical odors. Our methods center on integrated pest management (IPM), combining mechanical exclusions with spot treatments.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Is there a warranty period after treatment?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Yes, all our services carry a guarantee of efficacy. Our basic one-time treatments include a standard 15-day free re-treatment policy if any pest activity returns. Our specialized services like bed bug treatments carry a 30-day warranty, while our comprehensive post-construction termite treatments include an industry-leading 10-year warranty certificate.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>What if pests return after the treatment is completed?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                If you notice any recurring pest activity within your specified warranty window, simply call or message our support team. We will dispatch a certified technician to inspect your property and perform a targeted re-treatment completely free of charge. Your complete peace of mind and structural hygiene are our highest priorities.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Do you handle pre-construction anti-termite treatment?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Yes, we are experts in pre-construction termite soil treatment. We inject high-strength chemical barriers into the structural foundations, soil layers, and plinth levels before the floor slabs are poured. This builds an impenetrable, lifetime defense shield that prevents subterranean termites from ever entering the building structure.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Do you serve both residential and commercial properties?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Yes, Greenline Pest Control serves a diverse client portfolio. We provide specialized residential treatments for apartments, bungalows, and housing societies, as well as medical-grade commercial sanitization for hospitals, restaurants, logistics hubs, and food processing plants in Sample Vihar. Our commercial teams adhere strictly to industry audit compliance standards.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 11 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>How does the WhatsApp booking process work?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Our booking system is simple and completely frontend-driven. When you fill out our online booking form (name, phone, address, date, and preferred service) and click submit, our website automatically compiles this information into a neatly formatted WhatsApp text message and opens WhatsApp. All you have to do is tap the 'Send' button on your screen to transmit the details directly to our desk, and our team will reply immediately to confirm your appointment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 12 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>What geographical areas do you service?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                We are based in Sample Vihar and provide our high-hygiene services across all major neighborhoods, residential suburbs, and industrial zones within a 30km radius. This includes Garden Road, Municipal Circle, MIDC Industrial Area, and surrounding local sectors. If you are unsure whether your location is covered, feel free to drop us a quick text.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 13 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>What payment methods do you accept?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                To make payments seamless and secure, we accept all digital payment methods including UPI (Google Pay, PhonePe, Paytm), credit and debit cards, net banking transfers, and cash upon service completion. For commercial AMC clients, we also offer structured invoicing options with corporate billing cycles.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 14 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>How should I prepare my property before the technician arrives?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                To help our technicians work efficiently, we recommend covering any exposed food, dining utensils, and baby toys. In kitchens, please clear the countertops and empty the area under the sink for cockroach gel baiting. For termite or wall spraying, keep furniture slightly away from walls to provide clear access to crevices and borders.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 15 -->
+                    <div class="faq-item reveal">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Do you offer emergency or same-day service?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-body">
+                            <div class="faq-content">
+                                Yes, we keep dedicated emergency response slots open every day for urgent pest issues like active wasp nest removals, severe bed bug cases, or sudden rodent sightings. If you require emergency assistance, please contact us directly via our hotline (+91 75593 52915) or WhatsApp us immediately, and we will do our best to dispatch a technician on the same day.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding text-center" style="background-color: var(--bg-light); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <span class="section-subtitle">No Pest is Too Stubborn</span>
+                <h2 style="font-size: 2rem; color: var(--primary-dark); margin-bottom: 15px;">Experience the Greenline Standard</h2>
+                <p style="max-width: 600px; margin: 0 auto 30px; color: var(--text-muted);">Get in touch with our team today to clear your property and regain your peace of mind.</p>
+                <button class="btn btn-primary btn-lg" data-open-modal>
+                    <i class="fa-solid fa-calendar-check"></i> Schedule Free Consultation
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Greenline</h1>
+                        <span>Pest Control</span>
+                    </div>
+                </a>
+                <p>Greenline Pest Control is committed to protecting homes and properties in Sample Vihar using clinical safety standards, child-safe treatments, and licensed professionals.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.me/917559352915" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="pricing.html"><i class="fa-solid fa-chevron-right"></i> Pricing Tiers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> General Pest Control</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Termite Treatment</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Cockroach Gel Gel</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Rodent Baiting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>7 Garden Road, Near Municipal Office, Sample Vihar – 400004, Maharashtra</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 75593 52915<br>+91 95275 86194</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@greenlinepest.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Greenline Pest Control. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="floating-btn floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917559352915" class="floating-btn floating-call" aria-label="Call Direct Support">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- SYSTEM-WIDE CONFIRMATION BANNER -->
+    <div class="confirmation-banner" id="confirmationBanner" role="alert" aria-live="assertive">
+        <div class="confirm-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="confirm-content">
+            <h4>Booking Request Formed!</h4>
+            <p>Your booking details have opened in WhatsApp — please tap the <strong>Send</strong> button inside the WhatsApp screen to confirm your booking with Greenline Pest Control.</p>
+            <button class="confirm-close-btn" id="closeConfirmBanner">Got it, Dismiss</button>
+        </div>
+    </div>
+
+    <!-- REUSABLE BOOKING MODAL MARKUP -->
+    <div class="modal-overlay" id="bookingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="booking-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-shield-virus"></i> Book Pest Control</h3>
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close booking modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required minlength="2">
+                        <div class="form-error" id="nameError">Please enter your full name (minimum 2 characters).</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                            <input type="tel" id="mobileNumber" class="form-control" placeholder="10-digit number starting 6-9" required pattern="[6-9][0-9]{9}">
+                            <div class="form-error" id="mobileError">Enter a valid 10-digit mobile number starting with 6-9.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@domain.com (optional)">
+                            <div class="form-error" id="emailError">Please enter a valid email address layout.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceNeeded" class="form-label">Service Needed *</label>
+                        <select id="serviceNeeded" class="form-control" required>
+                            <option value="" disabled selected>Select a service or package</option>
+                            <optgroup label="Specialized Services">
+                                <option value="General Pest Control">General Pest Control</option>
+                                <option value="Termite Control &amp; Inspection">Termite Control &amp; Inspection</option>
+                                <option value="Cockroach Extermination">Cockroach Extermination</option>
+                                <option value="Rodent / Rat Control Treatment">Rodent / Rat Control Treatment</option>
+                                <option value="Bed Bug Extermination">Bed Bug Extermination</option>
+                                <option value="Mosquito Control &amp; Fogging Service">Mosquito Control &amp; Fogging Service</option>
+                                <option value="Ant Extermination">Ant Extermination</option>
+                                <option value="Bee, Wasp &amp; Hornet Removal">Bee, Wasp &amp; Hornet Removal</option>
+                                <option value="Spider Extermination">Spider Extermination</option>
+                                <option value="Bat Extermination">Bat Extermination</option>
+                                <option value="Flea &amp; Mite Extermination">Flea &amp; Mite Extermination</option>
+                                <option value="Home / Property Pest Inspection">Home / Property Pest Inspection</option>
+                            </optgroup>
+                            <optgroup label="Estimated Packages">
+                                <option value="Basic Package">Basic Package (One-Time General Treatment)</option>
+                                <option value="Standard Package">Standard Package (Quarterly AMC)</option>
+                                <option value="Premium AMC Package">Premium AMC Package (Comprehensive AMC)</option>
+                            </optgroup>
+                        </select>
+                        <div class="form-error" id="serviceError">Please select a service or package category.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyAddress" class="form-label">Property Address / Area *</label>
+                        <input type="text" id="propertyAddress" class="form-control" placeholder="Flat/House No, Building Name, Landmark, Area" required>
+                        <div class="form-error" id="addressError">Please enter the location address.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date *</label>
+                            <input type="date" id="preferredDate" class="form-control" required>
+                            <div class="form-error" id="dateError">Please specify your preferred date.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime" class="form-label">Preferred Time Slot *</label>
+                            <select id="preferredTime" class="form-control" required>
+                                <option value="" disabled selected>Select a time window</option>
+                                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                            </select>
+                            <div class="form-error" id="timeError">Please select a preferred time slot.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalMessage" class="form-label">Additional Message</label>
+                        <textarea id="additionalMessage" class="form-control" rows="3" placeholder="Any specific requirements or issues you're facing?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        (function() {
+            function initFAQ() {
+                const faqItems = document.querySelectorAll('.faq-item');
+                if (faqItems.length === 0) return;
+
+                faqItems.forEach(item => {
+                    const header = item.querySelector('.faq-header');
+                    const body = item.querySelector('.faq-body');
+                    if (!header || !body) return;
+
+                    header.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const isOpen = item.classList.contains('open');
+
+                        // Close all other faq items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('open');
+                                const otherHeader = otherItem.querySelector('.faq-header');
+                                const otherBody = otherItem.querySelector('.faq-body');
+                                if (otherHeader) otherHeader.setAttribute('aria-expanded', 'false');
+                                if (otherBody) otherBody.style.maxHeight = '0';
+                            }
+                        });
+
+                        // Toggle current faq item
+                        if (isOpen) {
+                            item.classList.remove('open');
+                            header.setAttribute('aria-expanded', 'false');
+                            body.style.maxHeight = '0';
+                        } else {
+                            item.classList.add('open');
+                            header.setAttribute('aria-expanded', 'true');
+                            body.style.maxHeight = body.scrollHeight + 'px';
+                        }
+                    });
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initFAQ);
+            } else {
+                initFAQ();
+            }
+        })();
+    </script>
+</body>
+</html>

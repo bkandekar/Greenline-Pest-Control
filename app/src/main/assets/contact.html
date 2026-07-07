@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Greenline Pest Control | Clean Homes, Healthy Living</title>
-    <meta name="description" content="View our complete roster of 12 specialized, certified, and safe pest control services in Sample Vihar. Safe child and pet-friendly solutions.">
+    <title>Contact Us | Greenline Pest Control | Local Support in Sample Vihar</title>
+    <meta name="description" content="Contact Greenline Pest Control. Drop us a message, call +91 75593 52915, or visit our local HQ in Maharashtra. Book a specific service using our instant modal.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://greenlinepest.com/services.html">
-    <meta property="og:title" content="Our Specialized Services | Greenline Pest Control">
-    <meta property="og:description" content="View our 12 certified and pet-safe pest control services. Highly professional solutions with zero toxic fumes.">
+    <meta property="og:url" content="https://greenlinepest.com/contact.html">
+    <meta property="og:title" content="Contact Us | Greenline Pest Control">
+    <meta property="og:description" content="Reach our support desk directly via call, WhatsApp, or email. Submit our local message form or open our customized booking scheduler.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Font Awesome CDN -->
@@ -18,6 +18,79 @@
     
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Contact page customized styling */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        @media (max-width: 991px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-info-block {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+        }
+        .contact-info-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            width: 30px;
+            text-align: center;
+        }
+        .contact-info-item h4 {
+            color: var(--primary-dark);
+            margin: 0 0 5px;
+            font-weight: 600;
+        }
+        .contact-info-item p {
+            margin: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .hours-table td {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+        .hours-table tr:last-child td {
+            border-bottom: none;
+        }
+        .hours-table td.day-name {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .hours-table td.time-slot {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 
@@ -64,12 +137,12 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                     <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
                     <li><a href="faq.html" class="nav-link">FAQ</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
             </nav>
 
@@ -96,12 +169,12 @@
         <ul>
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
-            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
             <li><a href="pricing.html" class="nav-link">Pricing</a></li>
             <li><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
             <li><a href="faq.html" class="nav-link">FAQ</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
         <div class="mobile-cta">
             <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
@@ -116,235 +189,164 @@
     <!-- MAIN CONTENT -->
     <main>
 
-        <!-- Services Hero Block -->
+        <!-- Page Hero (Visual Header) -->
         <section class="section-padding text-center" style="background-color: var(--bg-light); border-bottom: 1px solid var(--border-color);">
             <div class="container">
-                <span class="section-subtitle">Our Portfolios</span>
-                <h1 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px;">Certified Hygiene Solutions</h1>
-                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem;">We offer 12 highly specialized treatments structured to eradicate pests systematically and hygienically. Discover our targeted medical-grade treatment systems below.</p>
+                <span class="section-subtitle">Get In Touch</span>
+                <h1 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px;">We're Here to Assist You</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem;">Whether you want to drop a quick inquiry, leave operational feedback, or book a sterile scheduled visit — choose your preferred route below.</p>
             </div>
         </section>
 
-        <!-- 12 Services Card Grid -->
-        <section class="section-padding services-section">
-            <div class="container">
-                <div class="services-grid">
+        <!-- Core Grid Section -->
+        <section class="section-padding">
+            <div class="container contact-grid">
+                
+                <!-- Left: Inquiry Form -->
+                <div>
+                    <div class="contact-card">
+                        <div id="contactFormContainer">
+                            <span class="section-subtitle" style="margin-bottom: 10px;">Quick Message</span>
+                            <h2 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 25px;">Send a Direct Message</h2>
+                            
+                            <form id="contactInquiryForm" novalidate>
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <label for="contactName" class="form-label">Full Name *</label>
+                                    <input type="text" id="contactName" class="form-control" placeholder="Your full name" required minlength="2">
+                                    <div class="form-error" id="contactNameError">Please enter your name (minimum 2 characters).</div>
+                                </div>
 
-                    <!-- Service a: General Pest Control -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Kitchen countertops protected from general pests" width="600" height="400">
-                            <span class="service-tag">Hygienic Shield</span>
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <label for="contactPhone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="contactPhone" class="form-control" placeholder="10-digit mobile number starting 6-9" required pattern="[6-9][0-9]{9}">
+                                    <div class="form-error" id="contactPhoneError">Please enter a valid 10-digit mobile number starting with 6-9.</div>
+                                </div>
+
+                                <div class="form-group" style="margin-bottom: 25px;">
+                                    <label for="contactMessage" class="form-label">Your Message *</label>
+                                    <textarea id="contactMessage" class="form-control" rows="5" placeholder="Let us know what you need help with..." required></textarea>
+                                    <div class="form-error" id="contactMessageError">Please write your inquiry or message.</div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-weight: 600;">
+                                    <i class="fa-solid fa-paper-plane"></i> Send Offline Message
+                                </button>
+                            </form>
                         </div>
-                        <div class="service-card-content">
-                            <h3>General Pest Control</h3>
-                            <p>An exhaustive, multi-barrier spray and micro-emulsion barrier targeting common ants, flies, silverfish, and structural sanitation. Safe for pets.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,200</span>
-                                <button class="btn btn-outline" data-open-modal data-service="General Pest Control">Book Now</button>
-                            </div>
+
+                        <!-- Success Card -->
+                        <div class="contact-success-card" id="contactSuccessCard" style="display: none; text-align: center; padding: 20px 0;">
+                            <i class="fa-solid fa-circle-check" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                            <h3 style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px;">Message Received!</h3>
+                            <p style="color: var(--text-dark); max-width: 450px; margin: 0 auto 25px; line-height: 1.6;">Thank you for writing to Greenline Pest Control. We have received your inquiry. Our customer care desk will call you back shortly on your provided phone number.</p>
+                            <button class="btn btn-outline" id="resetContactFormBtn">
+                                Send Another Message
+                            </button>
+                        </div>
+
+                        <div style="margin-top: 35px; border-top: 1px solid var(--border-color); padding-top: 25px; text-align: center;">
+                            <p style="margin-bottom: 15px; color: var(--text-muted); font-size: 0.95rem;">Looking to book a certified treatment slot directly on WhatsApp?</p>
+                            <button class="btn btn-accent btn-lg" data-open-modal>
+                                <i class="fa-solid fa-calendar-days"></i> Book a Specific Service
+                            </button>
                         </div>
                     </div>
-
-                    <!-- Service b: Termite Control & Inspection -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Inspecting wooden beams for termite damage" width="600" height="400">
-                            <span class="service-tag">Wood Defense</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Termite Control &amp; Inspection</h3>
-                            <p>Heavy chemical drilling-injecting barriers. Covers both Pre-Construction protection and Post-Construction soil treatment. Up to 10-year warranty.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Call for Quote</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Termite Control &amp; Inspection">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service c: Cockroach Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Pristine kitchen corner representing cockroach eradication" width="600" height="400">
-                            <span class="service-tag">Gel Baiting</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Cockroach Extermination</h3>
-                            <p>Precision spot-placement of odorless food-grade gel baits and insect growth regulators (IGRs). No mess, no smell, 100% eradication.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹950</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Cockroach Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service d: Rodent / Rat Control Treatment -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1595841696660-16ada114309f?auto=format&fit=crop&w=600&q=80" alt="Secured outdoor rodent bait station" width="600" height="400">
-                            <span class="service-tag">Trapping Bays</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Rodent / Rat Control Treatment</h3>
-                            <p>Lockable physical bait stations and toxic-free adhesive pads configured around outer and inner premises. Safe from kids and pets.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,100</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Rodent / Rat Control Treatment">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service e: Bed Bug Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&q=80" alt="Mattress protected from bed bugs" width="600" height="400">
-                            <span class="service-tag">Steam Treatment</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Bed Bug Extermination</h3>
-                            <p>High-temperature dry steam combined with specialized contact sprays to wipe out adult bed bugs and egg follicles inside joints.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,500</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Bed Bug Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service f: Mosquito Control & Fogging Service -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=600&q=80" alt="Thermal fogger spray" width="600" height="400">
-                            <span class="service-tag">Anti-Larval</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Mosquito Control &amp; Fogging Service</h3>
-                            <p>Eco-friendly water-based misting for foliage and chemical thermal fogging for drains to prevent breeding. Ideal for residential complexes.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,300</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Mosquito Control &amp; Fogging Service">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service g: Ant Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1558904541-efa8c1a68f6f?auto=format&fit=crop&w=600&q=80" alt="Garden grass representing ant treatment" width="600" height="400">
-                            <span class="service-tag">Colony Wash</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Ant Extermination</h3>
-                            <p>Targeted gel treatment that workers carry back to neutralize the queen ant deep within wall cavities or lawn mounds.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹800</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Ant Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service h: Bee, Wasp & Hornet Removal -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=600&q=80" alt="Wasp nest safely dismantled" width="600" height="400">
-                            <span class="service-tag">Safe Extraction</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Bee, Wasp &amp; Hornet Removal</h3>
-                            <p>Safe extraction of stinging insect nests under roofs and balconies without harming structure or neighborhood safety. Performed at night.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,500</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Bee, Wasp &amp; Hornet Removal">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service i: Spider Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Clean bathroom tile corners" width="600" height="400">
-                            <span class="service-tag">Web Defense</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Spider Extermination</h3>
-                            <p>Complete sweeping of cobwebs followed by residue aerosol spraying along corners to prevent spider regrouping.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹900</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Spider Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service j: Bat Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Attic and roof inspection" width="600" height="400">
-                            <span class="service-tag">Humane Repeller</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Bat Extermination</h3>
-                            <p>Humane exclusion of bats from attics and false ceilings using high-frequency sonic repellers and one-way release nets.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Call for Quote</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Bat Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service k: Flea & Mite Extermination -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Pet dog safe in a clean home environment" width="600" height="400">
-                            <span class="service-tag">Pet Safe</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Flea &amp; Mite Extermination</h3>
-                            <p>Targeted upholstery and carpet deep wash treatment using non-toxic solutions to safely extract nested fleas and mites.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,400</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Flea &amp; Mite Extermination">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service l: Home / Property Pest Inspection -->
-                    <div class="service-card reveal">
-                        <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Bungalow exterior representing full structural inspection" width="600" height="400">
-                            <span class="service-tag">Thermal Scan</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Home / Property Pest Inspection</h3>
-                            <p>Full mapping of moisture dampness, hidden nests, entry shafts, and foundation breaches using infrared thermography. 100% Free.</p>
-                            <div class="service-card-footer">
-                                <span class="price-period" style="font-weight: 600; color: var(--primary-color); text-transform: uppercase;">FREE</span>
-                                <button class="btn btn-outline" data-open-modal data-service="Home / Property Pest Inspection">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Right: Contact Parameters -->
+                <div>
+                    <div class="contact-info-block">
+                        <span class="section-subtitle" style="margin-bottom: 10px;">HQ Directory</span>
+                        <h2 style="font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 25px;">Contact Details</h2>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Our Address</h4>
+                                <p>7 Garden Road, Near Municipal Office,<br>Sample Vihar – 400004, Maharashtra</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email Queries</h4>
+                                <p><a href="mailto:info@greenlinepest.com" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">info@greenlinepest.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Call Support</h4>
+                                <p>
+                                    Primary: <a href="tel:+917559352915" style="font-weight: 500; color: var(--primary-dark);">+91 75593 52915</a><br>
+                                    Alternate: <a href="tel:+919527586194" style="font-weight: 500; color: var(--primary-dark);">+91 95275 86194</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item" style="margin-bottom: 15px;">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Operating Hours</h4>
+                                <table class="hours-table">
+                                    <tr>
+                                        <td class="day-name">Mon - Sat</td>
+                                        <td class="time-slot">9:00 AM – 7:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-name">Sunday</td>
+                                        <td class="time-slot" style="color: #c00; font-weight: 500;">Closed</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div style="border-top: 1px solid var(--border-color); padding-top: 25px; margin-top: 25px;">
+                            <h4 style="color: var(--primary-dark); margin-bottom: 15px; font-weight: 600;">Follow Our Channels</h4>
+                            <div class="footer-socials" style="justify-content: flex-start; gap: 12px;">
+                                <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://wa.me/917559352915" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Highlighted Premium Banner for Pre-Construction Anti-Termite Treatment -->
-        <section class="container reveal" style="margin-bottom: 80px;">
-            <div class="premium-highlight-banner">
-                <div class="premium-highlight-grid">
-                    <div class="premium-highlight-content">
-                        <span class="section-subtitle" style="color: var(--accent-color);">Premium Service</span>
-                        <h3>Pre-Construction Anti-Termite Engineering</h3>
-                        <p>Protecting your property before concrete slabs are poured. We construct a heavy physical-chemical barrier within the sub-soil to isolate your structures from termite colonies forever.</p>
-                        <ul>
-                            <li><i class="fa-solid fa-circle-check"></i> 10-Year Stamp Certification</li>
-                            <li><i class="fa-solid fa-circle-check"></i> IS 6313 Standard Drill Compliant</li>
-                            <li><i class="fa-solid fa-circle-check"></i> Premium Non-Repellent Chemical Mix</li>
-                        </ul>
+        <!-- Google Maps Section -->
+        <section class="map-section reveal" aria-label="Greenline office location" style="border-top: 1px solid var(--border-color);">
+            <div class="map-grid">
+                <div class="map-info">
+                    <span class="section-subtitle">Local Office</span>
+                    <h3>Visit Our HQ</h3>
+                    <div class="map-details">
+                        <div class="map-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>7 Garden Road, Near Municipal Office,<br>Sample Vihar – 400004, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="map-detail-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="premium-highlight-btn">
-                        <a href="pricing.html" class="btn btn-accent btn-lg" style="padding: 16px 36px;">
-                            <i class="fa-solid fa-file-invoice-dollar"></i> View Package Rates
-                        </a>
-                    </div>
+                    <a href="https://maps.google.com/?q=Garden+Road,+Sample+Vihar,+Maharashtra" class="btn btn-outline" target="_blank">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
+                    </a>
+                </div>
+                <div class="map-iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.822987178087!2d72.8275995!3d19.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced0ef1f0c23%3A0xe67191e3e7f4c4a4!2sGarden+Rd%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1688640000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Garden Road, Sample Vihar"></iframe>
                 </div>
             </div>
         </section>
@@ -542,5 +544,83 @@
 
     <!-- JS Scripts -->
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formContainer = document.getElementById('contactFormContainer');
+            const successCard = document.getElementById('contactSuccessCard');
+            const form = document.getElementById('contactInquiryForm');
+            const resetBtn = document.getElementById('resetContactFormBtn');
+
+            // Form inputs & errors
+            const nameInput = document.getElementById('contactName');
+            const phoneInput = document.getElementById('contactPhone');
+            const messageInput = document.getElementById('contactMessage');
+
+            const nameError = document.getElementById('contactNameError');
+            const phoneError = document.getElementById('contactPhoneError');
+            const messageError = document.getElementById('contactMessageError');
+
+            // Real-time clearing of error classes on input
+            [nameInput, phoneInput, messageInput].forEach(input => {
+                input.addEventListener('input', () => {
+                    input.classList.remove('is-invalid');
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                let isValid = true;
+
+                // Validate Name
+                if (nameInput.value.trim().length < 2) {
+                    nameInput.classList.add('is-invalid');
+                    nameError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    nameInput.classList.remove('is-invalid');
+                    nameError.style.display = 'none';
+                }
+
+                // Validate Phone
+                const phonePattern = /^[6-9][0-9]{9}$/;
+                if (!phonePattern.test(phoneInput.value.trim())) {
+                    phoneInput.classList.add('is-invalid');
+                    phoneError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    phoneInput.classList.remove('is-invalid');
+                    phoneError.style.display = 'none';
+                }
+
+                // Validate Message
+                if (messageInput.value.trim() === '') {
+                    messageInput.classList.add('is-invalid');
+                    messageError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    messageInput.classList.remove('is-invalid');
+                    messageError.style.display = 'none';
+                }
+
+                if (isValid) {
+                    // Hide form and show success card with custom animations
+                    formContainer.style.display = 'none';
+                    successCard.style.display = 'block';
+                    successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+
+            // Reset form handler
+            resetBtn.addEventListener('click', () => {
+                form.reset();
+                [nameInput, phoneInput, messageInput].forEach(input => {
+                    input.classList.remove('is-invalid');
+                });
+                successCard.style.display = 'none';
+                formContainer.style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
