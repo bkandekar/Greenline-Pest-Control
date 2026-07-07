@@ -1,0 +1,5 @@
+# Robots.txt for Greenline Pest Control
+User-agent: *
+Allow: /
+
+Sitemap: https://greenlinepest.com/sitemap.xml

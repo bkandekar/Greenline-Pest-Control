@@ -1,0 +1,6 @@
+{
+  "name": "Greenline Pest Control",
+  "description": "A modern, responsive, hygienic pest control company application with WhatsApp booking integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

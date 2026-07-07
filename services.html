@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Greenline Pest Control | Clean Homes, Healthy Living</title>
+    <meta name="description" content="View our complete roster of 12 specialized, certified, and safe pest control services in Sample Vihar. Safe child and pet-friendly solutions.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenlinepest.com/services.html">
+    <meta property="og:title" content="Our Specialized Services | Greenline Pest Control">
+    <meta property="og:description" content="View our 12 certified and pet-safe pest control services. Highly professional solutions with zero toxic fumes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. PRE-LOADER -->
+    <div id="preloader" role="status" aria-label="Loading page content">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. DISMISSIBLE TOP BANNER -->
+    <div class="top-banner" id="topBanner">
+        <p><i class="fa-solid fa-sparkles"></i> <strong>Special Offer:</strong> Free Property Inspection This Week! Book Now.</p>
+        <button class="close-banner" id="closeBanner" aria-label="Dismiss banner">&times;</button>
+    </div>
+
+    <!-- 3. CONTACT INFO HEADER BAR -->
+    <div class="contact-header-bar">
+        <div class="container">
+            <div class="contact-header-links">
+                <a href="tel:+917559352915"><i class="fa-solid fa-phone"></i> +91 7559352915</a>
+                <a href="tel:+919527586194"><i class="fa-solid fa-phone-volume"></i> +91 9527586194</a>
+                <a href="mailto:info@greenlinepest.com"><i class="fa-solid fa-envelope"></i> info@greenlinepest.com</a>
+            </div>
+            <div class="contact-header-links">
+                <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. HEADER & STICKY NAVBAR -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Greenline</h1>
+                    <span>Pest Control</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                    <i class="fa-solid fa-calendar-check"></i> Book Free Quote
+                </button>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                <i class="fa-solid fa-calendar-check"></i> Book Quote
+            </button>
+            <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-accent" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- Services Hero Block -->
+        <section class="section-padding text-center" style="background-color: var(--bg-light); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <span class="section-subtitle">Our Portfolios</span>
+                <h1 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px;">Certified Hygiene Solutions</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem;">We offer 12 highly specialized treatments structured to eradicate pests systematically and hygienically. Discover our targeted medical-grade treatment systems below.</p>
+            </div>
+        </section>
+
+        <!-- 12 Services Card Grid -->
+        <section class="section-padding services-section">
+            <div class="container">
+                <div class="services-grid">
+
+                    <!-- Service a: General Pest Control -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" alt="Kitchen countertops protected from general pests" width="600" height="400">
+                            <span class="service-tag">Hygienic Shield</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>General Pest Control</h3>
+                            <p>An exhaustive, multi-barrier spray and micro-emulsion barrier targeting common ants, flies, silverfish, and structural sanitation. Safe for pets.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,200</span>
+                                <button class="btn btn-outline" data-open-modal data-service="General Pest Control">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service b: Termite Control & Inspection -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Inspecting wooden beams for termite damage" width="600" height="400">
+                            <span class="service-tag">Wood Defense</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Termite Control &amp; Inspection</h3>
+                            <p>Heavy chemical drilling-injecting barriers. Covers both Pre-Construction protection and Post-Construction soil treatment. Up to 10-year warranty.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Call for Quote</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Termite Control &amp; Inspection">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service c: Cockroach Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Pristine kitchen corner representing cockroach eradication" width="600" height="400">
+                            <span class="service-tag">Gel Baiting</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Cockroach Extermination</h3>
+                            <p>Precision spot-placement of odorless food-grade gel baits and insect growth regulators (IGRs). No mess, no smell, 100% eradication.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹950</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Cockroach Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service d: Rodent / Rat Control Treatment -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1595841696660-16ada114309f?auto=format&fit=crop&w=600&q=80" alt="Secured outdoor rodent bait station" width="600" height="400">
+                            <span class="service-tag">Trapping Bays</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Rodent / Rat Control Treatment</h3>
+                            <p>Lockable physical bait stations and toxic-free adhesive pads configured around outer and inner premises. Safe from kids and pets.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,100</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Rodent / Rat Control Treatment">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service e: Bed Bug Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&q=80" alt="Mattress protected from bed bugs" width="600" height="400">
+                            <span class="service-tag">Steam Treatment</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Bed Bug Extermination</h3>
+                            <p>High-temperature dry steam combined with specialized contact sprays to wipe out adult bed bugs and egg follicles inside joints.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,500</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Bed Bug Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service f: Mosquito Control & Fogging Service -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=600&q=80" alt="Thermal fogger spray" width="600" height="400">
+                            <span class="service-tag">Anti-Larval</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Mosquito Control &amp; Fogging Service</h3>
+                            <p>Eco-friendly water-based misting for foliage and chemical thermal fogging for drains to prevent breeding. Ideal for residential complexes.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,300</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Mosquito Control &amp; Fogging Service">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service g: Ant Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558904541-efa8c1a68f6f?auto=format&fit=crop&w=600&q=80" alt="Garden grass representing ant treatment" width="600" height="400">
+                            <span class="service-tag">Colony Wash</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Ant Extermination</h3>
+                            <p>Targeted gel treatment that workers carry back to neutralize the queen ant deep within wall cavities or lawn mounds.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹800</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Ant Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service h: Bee, Wasp & Hornet Removal -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=600&q=80" alt="Wasp nest safely dismantled" width="600" height="400">
+                            <span class="service-tag">Safe Extraction</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Bee, Wasp &amp; Hornet Removal</h3>
+                            <p>Safe extraction of stinging insect nests under roofs and balconies without harming structure or neighborhood safety. Performed at night.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,500</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Bee, Wasp &amp; Hornet Removal">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service i: Spider Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Clean bathroom tile corners" width="600" height="400">
+                            <span class="service-tag">Web Defense</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Spider Extermination</h3>
+                            <p>Complete sweeping of cobwebs followed by residue aerosol spraying along corners to prevent spider regrouping.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹900</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Spider Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service j: Bat Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Attic and roof inspection" width="600" height="400">
+                            <span class="service-tag">Humane Repeller</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Bat Extermination</h3>
+                            <p>Humane exclusion of bats from attics and false ceilings using high-frequency sonic repellers and one-way release nets.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Call for Quote</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Bat Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service k: Flea & Mite Extermination -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Pet dog safe in a clean home environment" width="600" height="400">
+                            <span class="service-tag">Pet Safe</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Flea &amp; Mite Extermination</h3>
+                            <p>Targeted upholstery and carpet deep wash treatment using non-toxic solutions to safely extract nested fleas and mites.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color);">Starts at ₹1,400</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Flea &amp; Mite Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service l: Home / Property Pest Inspection -->
+                    <div class="service-card reveal">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Bungalow exterior representing full structural inspection" width="600" height="400">
+                            <span class="service-tag">Thermal Scan</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Home / Property Pest Inspection</h3>
+                            <p>Full mapping of moisture dampness, hidden nests, entry shafts, and foundation breaches using infrared thermography. 100% Free.</p>
+                            <div class="service-card-footer">
+                                <span class="price-period" style="font-weight: 600; color: var(--primary-color); text-transform: uppercase;">FREE</span>
+                                <button class="btn btn-outline" data-open-modal data-service="Home / Property Pest Inspection">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlighted Premium Banner for Pre-Construction Anti-Termite Treatment -->
+        <section class="container reveal" style="margin-bottom: 80px;">
+            <div class="premium-highlight-banner">
+                <div class="premium-highlight-grid">
+                    <div class="premium-highlight-content">
+                        <span class="section-subtitle" style="color: var(--accent-color);">Premium Service</span>
+                        <h3>Pre-Construction Anti-Termite Engineering</h3>
+                        <p>Protecting your property before concrete slabs are poured. We construct a heavy physical-chemical barrier within the sub-soil to isolate your structures from termite colonies forever.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> 10-Year Stamp Certification</li>
+                            <li><i class="fa-solid fa-circle-check"></i> IS 6313 Standard Drill Compliant</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Premium Non-Repellent Chemical Mix</li>
+                        </ul>
+                    </div>
+                    <div class="premium-highlight-btn">
+                        <a href="pricing.html" class="btn btn-accent btn-lg" style="padding: 16px 36px;">
+                            <i class="fa-solid fa-file-invoice-dollar"></i> View Package Rates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Greenline</h1>
+                        <span>Pest Control</span>
+                    </div>
+                </a>
+                <p>Greenline Pest Control is committed to protecting homes and properties in Sample Vihar using clinical safety standards, child-safe treatments, and licensed professionals.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.me/917559352915" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="pricing.html"><i class="fa-solid fa-chevron-right"></i> Pricing Tiers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> General Pest Control</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Termite Treatment</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Cockroach Gel Gel</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Rodent Baiting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>7 Garden Road, Near Municipal Office, Sample Vihar – 400004, Maharashtra</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 75593 52915<br>+91 95275 86194</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@greenlinepest.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Greenline Pest Control. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="floating-btn floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917559352915" class="floating-btn floating-call" aria-label="Call Direct Support">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- SYSTEM-WIDE CONFIRMATION BANNER -->
+    <div class="confirmation-banner" id="confirmationBanner" role="alert" aria-live="assertive">
+        <div class="confirm-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="confirm-content">
+            <h4>Booking Request Formed!</h4>
+            <p>Your booking details have opened in WhatsApp — please tap the <strong>Send</strong> button inside the WhatsApp screen to confirm your booking with Greenline Pest Control.</p>
+            <button class="confirm-close-btn" id="closeConfirmBanner">Got it, Dismiss</button>
+        </div>
+    </div>
+
+    <!-- REUSABLE BOOKING MODAL MARKUP -->
+    <div class="modal-overlay" id="bookingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="booking-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-shield-virus"></i> Book Pest Control</h3>
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close booking modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required minlength="2">
+                        <div class="form-error" id="nameError">Please enter your full name (minimum 2 characters).</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                            <input type="tel" id="mobileNumber" class="form-control" placeholder="10-digit number starting 6-9" required pattern="[6-9][0-9]{9}">
+                            <div class="form-error" id="mobileError">Enter a valid 10-digit mobile number starting with 6-9.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@domain.com (optional)">
+                            <div class="form-error" id="emailError">Please enter a valid email address layout.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceNeeded" class="form-label">Service Needed *</label>
+                        <select id="serviceNeeded" class="form-control" required>
+                            <option value="" disabled selected>Select a service or package</option>
+                            <optgroup label="Specialized Services">
+                                <option value="General Pest Control">General Pest Control</option>
+                                <option value="Termite Control &amp; Inspection">Termite Control &amp; Inspection</option>
+                                <option value="Cockroach Extermination">Cockroach Extermination</option>
+                                <option value="Rodent / Rat Control Treatment">Rodent / Rat Control Treatment</option>
+                                <option value="Bed Bug Extermination">Bed Bug Extermination</option>
+                                <option value="Mosquito Control &amp; Fogging Service">Mosquito Control &amp; Fogging Service</option>
+                                <option value="Ant Extermination">Ant Extermination</option>
+                                <option value="Bee, Wasp &amp; Hornet Removal">Bee, Wasp &amp; Hornet Removal</option>
+                                <option value="Spider Extermination">Spider Extermination</option>
+                                <option value="Bat Extermination">Bat Extermination</option>
+                                <option value="Flea &amp; Mite Extermination">Flea &amp; Mite Extermination</option>
+                                <option value="Home / Property Pest Inspection">Home / Property Pest Inspection</option>
+                            </optgroup>
+                            <optgroup label="Estimated Packages">
+                                <option value="Basic Package">Basic Package (One-Time General Treatment)</option>
+                                <option value="Standard Package">Standard Package (Quarterly AMC)</option>
+                                <option value="Premium AMC Package">Premium AMC Package (Comprehensive AMC)</option>
+                            </optgroup>
+                        </select>
+                        <div class="form-error" id="serviceError">Please select a service or package category.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyAddress" class="form-label">Property Address / Area *</label>
+                        <input type="text" id="propertyAddress" class="form-control" placeholder="Flat/House No, Building Name, Landmark, Area" required>
+                        <div class="form-error" id="addressError">Please enter the location address.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date *</label>
+                            <input type="date" id="preferredDate" class="form-control" required>
+                            <div class="form-error" id="dateError">Please specify your preferred date.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime" class="form-label">Preferred Time Slot *</label>
+                            <select id="preferredTime" class="form-control" required>
+                                <option value="" disabled selected>Select a time window</option>
+                                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                            </select>
+                            <div class="form-error" id="timeError">Please select a preferred time slot.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalMessage" class="form-label">Additional Message</label>
+                        <textarea id="additionalMessage" class="form-control" rows="3" placeholder="Any specific requirements or issues you're facing?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

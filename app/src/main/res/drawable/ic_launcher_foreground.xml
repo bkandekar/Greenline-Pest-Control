@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer white shield -->
+    <path
+        android:pathData="M 54,22 L 32,31 L 32,54 C 32,73 41,91 54,96 C 67,91 76,73 76,54 L 76,31 Z"
+        android:fillColor="#FFFFFF" />
+        
+    <!-- Inner green shield -->
+    <path
+        android:pathData="M 54,27 L 36,35 L 36,54 C 36,70 44,85 54,89 C 64,85 72,70 72,54 L 72,35 Z"
+        android:fillColor="#0F5132" />
+        
+    <!-- Amber checkmark -->
+    <path
+        android:pathData="M 45,58 L 51,64 L 63,49"
+        android:strokeColor="#F77F00"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

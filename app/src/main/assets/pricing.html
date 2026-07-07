@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Greenline Pest Control | Clean Homes, Healthy Living</title>
+    <meta name="description" content="View transparent and flexible pest control pricing tiers for residential and commercial structures in Sample Vihar. Starting ₹1,200/one-time.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenlinepest.com/pricing.html">
+    <meta property="og:title" content="Pricing Plans | Greenline Pest Control">
+    <meta property="og:description" content="View clear estimated pricing tiers for standard properties. Protect your home starting ₹950/quarter.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. PRE-LOADER -->
+    <div id="preloader" role="status" aria-label="Loading page content">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. DISMISSIBLE TOP BANNER -->
+    <div class="top-banner" id="topBanner">
+        <p><i class="fa-solid fa-sparkles"></i> <strong>Special Offer:</strong> Free Property Inspection This Week! Book Now.</p>
+        <button class="close-banner" id="closeBanner" aria-label="Dismiss banner">&times;</button>
+    </div>
+
+    <!-- 3. CONTACT INFO HEADER BAR -->
+    <div class="contact-header-bar">
+        <div class="container">
+            <div class="contact-header-links">
+                <a href="tel:+917559352915"><i class="fa-solid fa-phone"></i> +91 7559352915</a>
+                <a href="tel:+919527586194"><i class="fa-solid fa-phone-volume"></i> +91 9527586194</a>
+                <a href="mailto:info@greenlinepest.com"><i class="fa-solid fa-envelope"></i> info@greenlinepest.com</a>
+            </div>
+            <div class="contact-header-links">
+                <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. HEADER & STICKY NAVBAR -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Greenline</h1>
+                    <span>Pest Control</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                    <i class="fa-solid fa-calendar-check"></i> Book Free Quote
+                </button>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                <i class="fa-solid fa-calendar-check"></i> Book Quote
+            </button>
+            <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-accent" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- Pricing Hero Block -->
+        <section class="section-padding text-center" style="background-color: var(--bg-light); border-bottom: 1px solid var(--border-color);">
+            <div class="container">
+                <span class="section-subtitle">Transparency First</span>
+                <h1 style="font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px;">Affordable Protection Packages</h1>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem;">We offer flexible maintenance schedules tailored perfectly for residential blocks, individual flats, and commercial warehouses.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Table and Cards Section -->
+        <section class="section-padding pricing-section">
+            <div class="container">
+                
+                <!-- Mandatory Page Info Note -->
+                <div class="pricing-intro-note">
+                    <p><i class="fa-solid fa-circle-info" style="color: var(--accent-color); font-size: 1.2rem; margin-right: 8px;"></i> <strong>Note on Estimations:</strong> Prices shown below are estimated starting rates for standard-sized residential properties (up to 1,000 sq. ft.). Final pricing depends on property size, pest severity, and treatment type — confirm exact pricing with our team before booking.</p>
+                </div>
+
+                <!-- 3 Package Cards -->
+                <div class="pricing-grid">
+                    
+                    <!-- PACKAGE 1 — Basic -->
+                    <div class="pricing-card reveal">
+                        <div class="pricing-header">
+                            <h3>Basic Package</h3>
+                            <p>One-Time General Treatment</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹1,200</span>
+                                <span class="price-period">/one-time</span>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: -15px; margin-bottom: 25px;">* EDITABLE PLACEHOLDER PRICE *</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> General Pest Control (Cockroaches, Ants, Spiders)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Single intensive visit</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 3-Month effectiveness barrier</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Free re-treatment if pests return in 15 days</li>
+                            <li style="font-weight: 500; color: var(--primary-dark); border-top: 1px dashed var(--border-color); padding-top: 12px; margin-top: 15px;">
+                                <i class="fa-solid fa-house-chimney"></i> <strong>Best For:</strong> Small homes / 1-2 BHK flats
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline pricing-btn" data-open-modal data-service="Basic Package">Book This Package</button>
+                    </div>
+
+                    <!-- PACKAGE 2 — Standard -->
+                    <div class="pricing-card popular reveal">
+                        <span class="popular-badge">Most Popular</span>
+                        <div class="pricing-header">
+                            <h3>Standard Package</h3>
+                            <p>Quarterly Annual Contract (AMC)</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹950</span>
+                                <span class="price-period">/quarter</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--primary-light); font-weight: 600; margin-top: 8px;">(Total: ₹3,600/year)</p>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: -15px; margin-bottom: 25px;">* EDITABLE PLACEHOLDER PRICE *</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> General Pest Control + Cockroach Extermination</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 4 scheduled treatment visits/year</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Rodent Bait Station Monitoring &amp; maintenance</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Priority booking on weekend slots</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 20% discount on mosquito fogging add-on</li>
+                            <li style="font-weight: 500; color: var(--primary-dark); border-top: 1px dashed var(--border-color); padding-top: 12px; margin-top: 15px;">
+                                <i class="fa-solid fa-house-user"></i> <strong>Best For:</strong> Year-round protective cover
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary pricing-btn" data-open-modal data-service="Standard Package">Book This Package</button>
+                    </div>
+
+                    <!-- PACKAGE 3 — Premium -->
+                    <div class="pricing-card reveal">
+                        <div class="pricing-header">
+                            <h3>Premium AMC Package</h3>
+                            <p>Comprehensive Annual Care</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹1,800</span>
+                                <span class="price-period">/quarter</span>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--accent-color); font-weight: 600; margin-top: 8px;">(Total: ₹6,500/year)</p>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center; margin-top: -15px; margin-bottom: 25px;">* EDITABLE PLACEHOLDER PRICE *</p>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Everything in Standard Package</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Termite monitoring &amp; structural spot treatment</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Mosquito Fogging &amp; larvae wash (2 sessions/year)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Free emergency callouts (respond within 48 hours)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Priority dedicated technician assignment</li>
+                            <li style="font-weight: 500; color: var(--primary-dark); border-top: 1px dashed var(--border-color); padding-top: 12px; margin-top: 15px;">
+                                <i class="fa-solid fa-hotel"></i> <strong>Best For:</strong> Large homes, bungalows, commercial
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline pricing-btn" data-open-modal data-service="Premium AMC Package">Book This Package</button>
+                    </div>
+
+                </div>
+
+                <!-- Pre-Construction Termite Rate Block -->
+                <div class="reveal" style="margin-top: 60px;">
+                    <div style="background-color: var(--bg-light); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 40px; display: flex; flex-direction: column; gap: 30px; align-items: center; justify-content: space-between; box-shadow: var(--shadow-sm);">
+                        <div style="text-align: center;">
+                            <span class="section-subtitle" style="color: var(--primary-color);">Foundations</span>
+                            <h3 style="font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 10px;">Pre-Construction Anti-Termite Treatment</h3>
+                            <p style="color: var(--text-muted); max-width: 650px; font-size: 0.95rem;">Soil-slab protective barriers designed for physical foundation protection. Includes multi-stage chemical drilling, standard IS 6313 chemical injection, and official certification documentation.</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="price-value" style="font-size: 2.25rem;">Starting at ₹15<span style="font-size: 1rem; color: var(--text-muted); font-weight: 500;"> / sq. ft.</span></div>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">* Final quote calculated after physical site assessment *</p>
+                        </div>
+                        <button class="btn btn-primary" data-open-modal data-service="Termite Control &amp; Inspection">
+                            <i class="fa-solid fa-calculator"></i> Book Site Visit &amp; Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bottom Consultation Prompts -->
+                <div class="text-center reveal" style="margin-top: 60px; border-top: 1px solid var(--border-color); padding-top: 40px;">
+                    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 20px;">Need a custom quote for a large property, complex layout, or commercial office space?</p>
+                    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                        <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-accent" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us Direct
+                        </a>
+                        <a href="tel:+917559352915" class="btn btn-outline">
+                            <i class="fa-solid fa-phone"></i> Call +91 7559352915
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Greenline</h1>
+                        <span>Pest Control</span>
+                    </div>
+                </a>
+                <p>Greenline Pest Control is committed to protecting homes and properties in Sample Vihar using clinical safety standards, child-safe treatments, and licensed professionals.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.me/917559352915" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="pricing.html"><i class="fa-solid fa-chevron-right"></i> Pricing Tiers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> General Pest Control</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Termite Treatment</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Cockroach Gel Gel</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Rodent Baiting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>7 Garden Road, Near Municipal Office, Sample Vihar – 400004, Maharashtra</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 75593 52915<br>+91 95275 86194</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@greenlinepest.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Greenline Pest Control. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="floating-btn floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917559352915" class="floating-btn floating-call" aria-label="Call Direct Support">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- SYSTEM-WIDE CONFIRMATION BANNER -->
+    <div class="confirmation-banner" id="confirmationBanner" role="alert" aria-live="assertive">
+        <div class="confirm-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="confirm-content">
+            <h4>Booking Request Formed!</h4>
+            <p>Your booking details have opened in WhatsApp — please tap the <strong>Send</strong> button inside the WhatsApp screen to confirm your booking with Greenline Pest Control.</p>
+            <button class="confirm-close-btn" id="closeConfirmBanner">Got it, Dismiss</button>
+        </div>
+    </div>
+
+    <!-- REUSABLE BOOKING MODAL MARKUP -->
+    <div class="modal-overlay" id="bookingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="booking-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-shield-virus"></i> Book Pest Control</h3>
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close booking modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required minlength="2">
+                        <div class="form-error" id="nameError">Please enter your full name (minimum 2 characters).</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                            <input type="tel" id="mobileNumber" class="form-control" placeholder="10-digit number starting 6-9" required pattern="[6-9][0-9]{9}">
+                            <div class="form-error" id="mobileError">Enter a valid 10-digit mobile number starting with 6-9.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@domain.com (optional)">
+                            <div class="form-error" id="emailError">Please enter a valid email address layout.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceNeeded" class="form-label">Service Needed *</label>
+                        <select id="serviceNeeded" class="form-control" required>
+                            <option value="" disabled selected>Select a service or package</option>
+                            <optgroup label="Specialized Services">
+                                <option value="General Pest Control">General Pest Control</option>
+                                <option value="Termite Control &amp; Inspection">Termite Control &amp; Inspection</option>
+                                <option value="Cockroach Extermination">Cockroach Extermination</option>
+                                <option value="Rodent / Rat Control Treatment">Rodent / Rat Control Treatment</option>
+                                <option value="Bed Bug Extermination">Bed Bug Extermination</option>
+                                <option value="Mosquito Control &amp; Fogging Service">Mosquito Control &amp; Fogging Service</option>
+                                <option value="Ant Extermination">Ant Extermination</option>
+                                <option value="Bee, Wasp &amp; Hornet Removal">Bee, Wasp &amp; Hornet Removal</option>
+                                <option value="Spider Extermination">Spider Extermination</option>
+                                <option value="Bat Extermination">Bat Extermination</option>
+                                <option value="Flea &amp; Mite Extermination">Flea &amp; Mite Extermination</option>
+                                <option value="Home / Property Pest Inspection">Home / Property Pest Inspection</option>
+                            </optgroup>
+                            <optgroup label="Estimated Packages">
+                                <option value="Basic Package">Basic Package (One-Time General Treatment)</option>
+                                <option value="Standard Package">Standard Package (Quarterly AMC)</option>
+                                <option value="Premium AMC Package">Premium AMC Package (Comprehensive AMC)</option>
+                            </optgroup>
+                        </select>
+                        <div class="form-error" id="serviceError">Please select a service or package category.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyAddress" class="form-label">Property Address / Area *</label>
+                        <input type="text" id="propertyAddress" class="form-control" placeholder="Flat/House No, Building Name, Landmark, Area" required>
+                        <div class="form-error" id="addressError">Please enter the location address.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date *</label>
+                            <input type="date" id="preferredDate" class="form-control" required>
+                            <div class="form-error" id="dateError">Please specify your preferred date.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime" class="form-label">Preferred Time Slot *</label>
+                            <select id="preferredTime" class="form-control" required>
+                                <option value="" disabled selected>Select a time window</option>
+                                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                            </select>
+                            <div class="form-error" id="timeError">Please select a preferred time slot.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalMessage" class="form-label">Additional Message</label>
+                        <textarea id="additionalMessage" class="form-control" rows="3" placeholder="Any specific requirements or issues you're facing?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

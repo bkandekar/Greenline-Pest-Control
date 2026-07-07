@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenline Pest Control | Clean Homes, Healthy Living</title>
+    <meta name="description" content="Professional, hygienic, and health-conscious pest control services in Sample Vihar. Child and pet-safe eco-friendly pest treatments. Book a free inspection today!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenlinepest.com/">
+    <meta property="og:title" content="Greenline Pest Control | Clean Homes, Healthy Living">
+    <meta property="og:description" content="Hygienic and health-conscious pest control treatments for homes and businesses. Safe, certified, and professional.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://greenlinepest.com/">
+    <meta property="twitter:title" content="Greenline Pest Control | Clean Homes, Healthy Living">
+    <meta property="twitter:description" content="Hygienic and health-conscious pest control treatments for homes and businesses. Safe, certified, and professional.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- LocalBusiness Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Greenline Pest Control",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+      "telephone": "+917559352915",
+      "email": "info@greenlinepest.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 Garden Road, Near Municipal Office, Sample Vihar",
+        "addressLocality": "Sample Vihar",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400004",
+        "addressCountry": "IN"
+      },
+      "url": "https://greenlinepest.com/index.html",
+      "priceRange": "₹₹",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- 1. PRE-LOADER -->
+    <div id="preloader" role="status" aria-label="Loading page content">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 2. DISMISSIBLE TOP BANNER -->
+    <div class="top-banner" id="topBanner">
+        <p><i class="fa-solid fa-sparkles"></i> <strong>Special Offer:</strong> Free Property Inspection This Week! Book Now.</p>
+        <button class="close-banner" id="closeBanner" aria-label="Dismiss banner">&times;</button>
+    </div>
+
+    <!-- 3. CONTACT INFO HEADER BAR -->
+    <div class="contact-header-bar">
+        <div class="container">
+            <div class="contact-header-links">
+                <a href="tel:+917559352915"><i class="fa-solid fa-phone"></i> +91 7559352915</a>
+                <a href="tel:+919527586194"><i class="fa-solid fa-phone-volume"></i> +91 9527586194</a>
+                <a href="mailto:info@greenlinepest.com"><i class="fa-solid fa-envelope"></i> info@greenlinepest.com</a>
+            </div>
+            <div class="contact-header-links">
+                <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. HEADER & STICKY NAVBAR -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Greenline</h1>
+                    <span>Pest Control</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                    <i class="fa-solid fa-calendar-check"></i> Book Free Quote
+                </button>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile Navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        </ul>
+        <div class="mobile-cta">
+            <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                <i class="fa-solid fa-calendar-check"></i> Book Quote
+            </button>
+            <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-accent" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- a. HERO SECTION -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-star"></i> Trustworthy, Safe &amp; Certified Treatments
+                    </div>
+                    <h2>Clean Homes,<br><span>Healthy Living</span></h2>
+                    <p class="hero-p">Providing medical-grade, safe, and hygienic pest solutions with 10+ years of collective experience. Certified eco-friendly chemicals that protect your kids and pets while exterminating pests effectively.</p>
+                    <div class="hero-btns">
+                        <button class="btn btn-primary" data-open-modal data-service="General Pest Control">
+                            <i class="fa-solid fa-check-double"></i> Book Free Inspection
+                        </button>
+                        <a href="services.html" class="btn btn-outline">
+                            View Services
+                        </a>
+                    </div>
+                    <ul class="hero-trust-list">
+                        <li class="hero-trust-item"><i class="fa-solid fa-circle-check"></i> Child &amp; Pet Safe</li>
+                        <li class="hero-trust-item"><i class="fa-solid fa-circle-check"></i> Govt. Approved Chemicals</li>
+                        <li class="hero-trust-item"><i class="fa-solid fa-circle-check"></i> 100% Satisfaction Guarantee</li>
+                    </ul>
+                </div>
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Hygienic clean home representing pest control results" width="800" height="600">
+                </div>
+            </div>
+        </section>
+
+        <!-- b. TRUST BAR (COUNTERS) -->
+        <div class="container">
+            <section class="trust-bar" aria-label="Greenline achievements">
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-number" data-target="10" data-suffix="+">0+</div>
+                        <div class="trust-label">Years of Trust</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number" data-target="4500" data-suffix="+">0+</div>
+                        <div class="trust-label">Properties Treated</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number" data-target="24" data-suffix="/7">0/7</div>
+                        <div class="trust-label">Active Support</div>
+                    </div>
+                    <div class="trust-card">
+                        <div class="trust-number" data-target="99" data-suffix="%">0%</div>
+                        <div class="trust-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- c. FEATURES SECTION (8 cards) -->
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Why Choose Us</span>
+                    <h2 class="section-title">Cleanliness &amp; Safety First</h2>
+                    <p class="section-desc">We emphasize clinical hygiene, safety, and long-term wellness. Here is how we ensure pristine and secure living spaces for you.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3>Trained &amp; Experienced</h3>
+                        <p>Our technicians are background checked, highly skilled, and certified in hygienic pest eradication.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Safe &amp; Approved Chemicals</h3>
+                        <p>We use WHIP/EPA-certified, organic, low-toxicity chemicals safe for children, seniors, and pets.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+                        <h3>Fogging &amp; Spray Treatment</h3>
+                        <p>Advanced low-drift sprayers and thermal foggers ensure full coverage without sticky residues.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
+                        <h3>Termite Pre/Post Care</h3>
+                        <p>Specialized physical and chemical barriers that protect foundation integrity forever.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+                        <h3>Rodent Bait Stations</h3>
+                        <p>Secure, tamper-resistant monitoring and baiting configurations that trap rodents cleanly.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3>Free Property Inspection</h3>
+                        <p>No-obligation thorough assessment of entry points and nesting nodes across your space.</p>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3>Residential &amp; Commercial</h3>
+                        <p>Custom programs scaled perfectly for small apartments up to vast warehouses.</p>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3>Quick Response Time</h3>
+                        <p>Dedicated local deployment teams arriving within 12-24 hours for emergency service requests.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- d. ABOUT PREVIEW SECTION -->
+        <section class="section-padding reveal" style="background-color: var(--bg-light);">
+            <div class="container about-preview-grid">
+                <div class="about-preview-images">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Professional pest control operator" class="about-img-main" width="800" height="600">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80" alt="Clean modern living room representing pest free environment" class="about-img-sub" width="500" height="375">
+                </div>
+                <div class="about-preview-content">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Greenline Pest Control</h2>
+                    <p>Established with a singular mission to promote healthier indoor ecosystems, Greenline Pest Control is more than just an extermination service. We are your hygiene partners. We view pest management through the lens of safety and preventive sanitation.</p>
+                    
+                    <div class="about-badge-list">
+                        <div class="about-badge-item">
+                            <i class="fa-solid fa-virus-slash"></i>
+                            <div>
+                                <h4>Sterile Hygiene focus</h4>
+                                <p>We sanitize the treatment areas along with pest removal.</p>
+                            </div>
+                        </div>
+                        <div class="about-badge-item">
+                            <i class="fa-solid fa-certificate"></i>
+                            <div>
+                                <h4>Certified Operations</h4>
+                                <p>Licensed operators fully adhering to WHO guidelines.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary">
+                        Read Our Full Story <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- e. SERVICES PREVIEW (6 cards) -->
+        <section class="section-padding services-section reveal">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Our Expertise</span>
+                    <h2 class="section-title">Targeted Pest Control Services</h2>
+                    <p class="section-desc">We offer dedicated, non-disruptive treatments targeting household and commercial infestations safely.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: General Pest -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Hygienic kitchen protected from general pests" width="600" height="400">
+                            <span class="service-tag">Eco-Friendly</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>General Pest Control</h3>
+                            <p>An all-round baseline shield covering common insects, ants, flies, and structural sanitization.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="General Pest Control">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Termite -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Wooden structural integrity termite inspection" width="600" height="400">
+                            <span class="service-tag">Structural Care</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Termite Control</h3>
+                            <p>Premium pre and post-construction protective chemical drills preventing termite structural failure.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="Termite Control &amp; Inspection">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Cockroach -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Clean kitchen free of cockroach infestation" width="600" height="400">
+                            <span class="service-tag">Hygienic Gel</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Cockroach Extermination</h3>
+                            <p>Advanced food-grade gel baiting systems. Odorless, non-messy, highly effective cockroach removal.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="Cockroach Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Rodent -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511113593259-7b792e35eb54?auto=format&fit=crop&w=600&q=80" alt="Rodent bait station monitoring in lawn" width="600" height="400">
+                            <span class="service-tag">Secure Trap</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Rodent / Rat Control</h3>
+                            <p>Safe physical locking traps and tracking stations designed to cleanly contain rodent activities.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="Rodent / Rat Control Treatment">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Mosquito -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?auto=format&fit=crop&w=600&q=80" alt="Garden mist fogging control" width="600" height="400">
+                            <span class="service-tag">Thermal Fogging</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Mosquito Control</h3>
+                            <p>Anti-larval misting and outdoor hot fogging treatments focused on reducing dengue risk.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="Mosquito Control &amp; Fogging Service">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Bed Bug -->
+                    <div class="service-card">
+                        <div class="service-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Clean cozy bed sheets protected from bed bugs" width="600" height="400">
+                            <span class="service-tag">Double Flush</span>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Bed Bug Extermination</h3>
+                            <p>Multi-stage targeted steam and syringe chemical injections targeting egg colonies inside wood.</p>
+                            <div class="service-card-footer">
+                                <a href="services.html" class="service-more-btn">Learn More</a>
+                                <button class="btn btn-outline" data-open-modal data-service="Bed Bug Extermination">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 50px;">
+                    <a href="services.html" class="btn btn-primary">
+                        View All 12 Specialized Services <i class="fa-solid fa-grip"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- f. PRICING PREVIEW -->
+        <section class="section-padding reveal">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Affordable Maintenance</span>
+                    <h2 class="section-title">Transparent Estimation Pricing</h2>
+                    <p class="section-desc">Quality hygiene shouldn't break the bank. Check our estimated starting packages and sign up for complete peace of mind.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Package 1 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Basic Package</h3>
+                            <p>One-Time General Treatment</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹1,200</span>
+                                <span class="price-period">/one-time</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-square-check"></i> General Pest Control</li>
+                            <li><i class="fa-solid fa-square-check"></i> Single comprehensive visit</li>
+                            <li><i class="fa-solid fa-square-check"></i> 3-Month effectiveness shield</li>
+                            <li><i class="fa-solid fa-square-check"></i> Free re-treatment (15 days)</li>
+                            <li class="excluded"><i class="fa-solid fa-square-xmark"></i> Cockroach deep gel gel</li>
+                            <li class="excluded"><i class="fa-solid fa-square-xmark"></i> Termite tracking</li>
+                        </ul>
+                        <button class="btn btn-outline pricing-btn" data-open-modal data-service="Basic Package">Book This Package</button>
+                    </div>
+
+                    <!-- Package 2 -->
+                    <div class="pricing-card popular">
+                        <span class="popular-badge">Most Popular</span>
+                        <div class="pricing-header">
+                            <h3>Standard Package</h3>
+                            <p>Quarterly Annual Contract (AMC)</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹950</span>
+                                <span class="price-period">/quarter</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-square-check"></i> General + Cockroach Control</li>
+                            <li><i class="fa-solid fa-square-check"></i> 4 scheduled visits/year</li>
+                            <li><i class="fa-solid fa-square-check"></i> Year-round safety coverage</li>
+                            <li><i class="fa-solid fa-square-check"></i> Rodent station installation</li>
+                            <li><i class="fa-solid fa-square-check"></i> 20% discount on fogging</li>
+                            <li class="excluded"><i class="fa-solid fa-square-xmark"></i> Termite monitoring</li>
+                        </ul>
+                        <button class="btn btn-primary pricing-btn" data-open-modal data-service="Standard Package">Book This Package</button>
+                    </div>
+
+                    <!-- Package 3 -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium AMC Package</h3>
+                            <p>Comprehensive Annual Care</p>
+                            <div class="pricing-price">
+                                <span class="price-value">₹1,800</span>
+                                <span class="price-period">/quarter</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-square-check"></i> Standard + Termite monitoring</li>
+                            <li><i class="fa-solid fa-square-check"></i> 4 core visits + 2 emergency calls</li>
+                            <li><i class="fa-solid fa-square-check"></i> Mosquito fogging (2/year)</li>
+                            <li><i class="fa-solid fa-square-check"></i> Free re-treatment anytime</li>
+                            <li><i class="fa-solid fa-square-check"></i> Priority technician assignment</li>
+                            <li><i class="fa-solid fa-square-check"></i> Spot termite treatments</li>
+                        </ul>
+                        <button class="btn btn-outline pricing-btn" data-open-modal data-service="Premium AMC Package">Book This Package</button>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 50px;">
+                    <a href="pricing.html" class="btn btn-accent">
+                        View Detailed Pricing Tiers <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- g. TESTIMONIALS CAROUSEL -->
+        <section class="section-padding testimonials-section reveal">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-subtitle">Real feedback</span>
+                    <h2 class="section-title">Tested &amp; Recommended</h2>
+                    <p class="section-desc">Hear directly from homeowners and managers about our sterile hygiene standards and quick responsiveness.</p>
+                </div>
+
+                <div class="testimonials-carousel-container">
+                    <div class="testimonials-track" id="carouselTrack" role="region" aria-live="polite">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Greenline's standard AMC is incredibly effective. They treat my kitchen quarterly, and I haven't seen a single cockroach in over a year. The technicians are always courteous and clean."</p>
+                                </div>
+                                <div class="testimonial-user">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Anita Sharma customer avatar" class="testimonial-avatar" width="50" height="50">
+                                    <div class="testimonial-user-info">
+                                        <h4>Anita Sharma</h4>
+                                        <p>Homeowner, Sample Vihar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The Pre-Construction Termite Treatment done at our new bungalow foundation was exceptional. The team provided formal site certificates and a 10-year warranty. Highly clinical approach!"</p>
+                                </div>
+                                <div class="testimonial-user">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80" alt="Rajesh Kulkarni customer avatar" class="testimonial-avatar" width="50" height="50">
+                                    <div class="testimonial-user-info">
+                                        <h4>Rajesh Kulkarni</h4>
+                                        <p>Builder, Garden Road</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Pristine service! They performed commercial rodent proofing for our food storage hub. Zero smell, no structural disruption, and incredibly hygienic bait placements."</p>
+                                </div>
+                                <div class="testimonial-user">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Vikas Mehta customer avatar" class="testimonial-avatar" width="50" height="50">
+                                    <div class="testimonial-user-info">
+                                        <h4>Vikas Mehta</h4>
+                                        <p>Operations Head, Vihar Logistics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Super responsive support! Called them at 8 PM for a heavy wasp nest under our balcony, and a technician arrived at 9 AM the next morning to cleanly dismantle it. Superb service!"</p>
+                                </div>
+                                <div class="testimonial-user">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Deepa Rao customer avatar" class="testimonial-avatar" width="50" height="50">
+                                    <div class="testimonial-user-info">
+                                        <h4>Deepa Rao</h4>
+                                        <p>Homeowner, Municipal Circle</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" id="carouselPrev" aria-label="Previous testimonials"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="carousel-dots" id="carouselDots"></div>
+                        <button class="carousel-btn" id="carouselNext" aria-label="Next testimonials"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- h. GOOGLE MAP SECTION -->
+        <section class="map-section reveal" aria-label="Greenline office location">
+            <div class="map-grid">
+                <div class="map-info">
+                    <span class="section-subtitle">Local Office</span>
+                    <h3>Visit Our HQ</h3>
+                    <div class="map-details">
+                        <div class="map-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>7 Garden Road, Near Municipal Office,<br>Sample Vihar – 400004, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="map-detail-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="map-detail-item">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <h4>Direct Support</h4>
+                                <p>WhatsApp Chat: +91 75593 52915<br>Phone: +91 95275 86194</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=Garden+Road,+Sample+Vihar,+Maharashtra" class="btn btn-outline" target="_blank">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
+                    </a>
+                </div>
+                <div class="map-iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.822987178087!2d72.8275995!3d19.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ced0ef1f0c23%3A0xe67191e3e7f4c4a4!2sGarden+Rd%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1688640000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Garden Road, Sample Vihar"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- i. CTA BANNER SECTION -->
+        <section class="cta-banner text-center reveal">
+            <div class="container">
+                <h2>Get a Free Pest Inspection Today</h2>
+                <p>Stop sharing your space with pests. Take the first step towards clean, germ-free, hygienic living. Book your free initial structural assessment now.</p>
+                <div class="cta-banner-btns">
+                    <button class="btn btn-accent" data-open-modal data-service="Home / Property Pest Inspection">
+                        <i class="fa-solid fa-file-invoice"></i> Book Inspection Now
+                    </button>
+                    <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="btn btn-primary" target="_blank" style="background-color: #25D366; border-color: #25D366;">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:+917559352915" class="btn btn-outline" style="color: white; border-color: white;">
+                        <i class="fa-solid fa-phone"></i> Call +91 7559352915
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- j. FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Greenline</h1>
+                        <span>Pest Control</span>
+                    </div>
+                </a>
+                <p>Greenline Pest Control is committed to protecting homes and properties in Sample Vihar using clinical safety standards, child-safe treatments, and licensed professionals.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.me/917559352915" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="pricing.html"><i class="fa-solid fa-chevron-right"></i> Pricing Tiers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> General Pest Control</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Termite Treatment</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Cockroach Gel Gel</a></li>
+                    <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Rodent Baiting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>7 Garden Road, Near Municipal Office, Sample Vihar – 400004, Maharashtra</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 75593 52915<br>+91 95275 86194</p>
+                    </li>
+                    <li class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@greenlinepest.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Greenline Pest Control. All Rights Reserved.</p>
+            <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTIONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/917559352915?text=Hi,%20I%20need%20pest%20control%20service" class="floating-btn floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+917559352915" class="floating-btn floating-call" aria-label="Call Direct Support">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- SYSTEM-WIDE CONFIRMATION BANNER -->
+    <div class="confirmation-banner" id="confirmationBanner" role="alert" aria-live="assertive">
+        <div class="confirm-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="confirm-content">
+            <h4>Booking Request Formed!</h4>
+            <p>Your booking details have opened in WhatsApp — please tap the <strong>Send</strong> button inside the WhatsApp screen to confirm your booking with Greenline Pest Control.</p>
+            <button class="confirm-close-btn" id="closeConfirmBanner">Got it, Dismiss</button>
+        </div>
+    </div>
+
+    <!-- REUSABLE BOOKING MODAL MARKUP -->
+    <div class="modal-overlay" id="bookingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="booking-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle"><i class="fa-solid fa-shield-virus"></i> Book Pest Control</h3>
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close booking modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required minlength="2">
+                        <div class="form-error" id="nameError">Please enter your full name (minimum 2 characters).</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobileNumber" class="form-label">Mobile Number *</label>
+                            <input type="tel" id="mobileNumber" class="form-control" placeholder="10-digit number starting 6-9" required pattern="[6-9][0-9]{9}">
+                            <div class="form-error" id="mobileError">Enter a valid 10-digit mobile number starting with 6-9.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@domain.com (optional)">
+                            <div class="form-error" id="emailError">Please enter a valid email address layout.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceNeeded" class="form-label">Service Needed *</label>
+                        <select id="serviceNeeded" class="form-control" required>
+                            <option value="" disabled selected>Select a service or package</option>
+                            <optgroup label="Specialized Services">
+                                <option value="General Pest Control">General Pest Control</option>
+                                <option value="Termite Control &amp; Inspection">Termite Control &amp; Inspection</option>
+                                <option value="Cockroach Extermination">Cockroach Extermination</option>
+                                <option value="Rodent / Rat Control Treatment">Rodent / Rat Control Treatment</option>
+                                <option value="Bed Bug Extermination">Bed Bug Extermination</option>
+                                <option value="Mosquito Control &amp; Fogging Service">Mosquito Control &amp; Fogging Service</option>
+                                <option value="Ant Extermination">Ant Extermination</option>
+                                <option value="Bee, Wasp &amp; Hornet Removal">Bee, Wasp &amp; Hornet Removal</option>
+                                <option value="Spider Extermination">Spider Extermination</option>
+                                <option value="Bat Extermination">Bat Extermination</option>
+                                <option value="Flea &amp; Mite Extermination">Flea &amp; Mite Extermination</option>
+                                <option value="Home / Property Pest Inspection">Home / Property Pest Inspection</option>
+                            </optgroup>
+                            <optgroup label="Estimated Packages">
+                                <option value="Basic Package">Basic Package (One-Time General Treatment)</option>
+                                <option value="Standard Package">Standard Package (Quarterly AMC)</option>
+                                <option value="Premium AMC Package">Premium AMC Package (Comprehensive AMC)</option>
+                            </optgroup>
+                        </select>
+                        <div class="form-error" id="serviceError">Please select a service or package category.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyAddress" class="form-label">Property Address / Area *</label>
+                        <input type="text" id="propertyAddress" class="form-control" placeholder="Flat/House No, Building Name, Landmark, Area" required>
+                        <div class="form-error" id="addressError">Please enter the location address.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date *</label>
+                            <input type="date" id="preferredDate" class="form-control" required>
+                            <div class="form-error" id="dateError">Please specify your preferred date.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime" class="form-label">Preferred Time Slot *</label>
+                            <select id="preferredTime" class="form-control" required>
+                                <option value="" disabled selected>Select a time window</option>
+                                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                                <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
+                                <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                            </select>
+                            <div class="form-error" id="timeError">Please select a preferred time slot.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalMessage" class="form-label">Additional Message</label>
+                        <textarea id="additionalMessage" class="form-control" rows="3" placeholder="Any specific requirements or issues you're facing?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
